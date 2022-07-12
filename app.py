@@ -19,6 +19,8 @@ from qualifier.utils.calculators import (
     calculate_loan_to_value_ratio,
 )
 
+from qualifier.utils.save_csv import save_csv
+
 from qualifier.filters.max_loan_size import filter_max_loan_size
 from qualifier.filters.credit_score import filter_credit_score
 from qualifier.filters.debt_to_income import filter_debt_to_income
@@ -111,29 +113,7 @@ def save_qualifying_loans(qualifying_loans):
     """
     # @TODO: Complete the usability dialog for savings the CSV Files.
 
-    headerpath = Path("data/daily_rate_sheet.csv")
-    with open(headerpath, 'r') as headerfile:
     
-        csvreader = csv.reader(headerfile)
-
-        data =[]
-
-        for row in csvreader:
-            data.append(row)
-
-    header = data[0][0:]
-
-    csvpath = Path("data/qualifying_loans.csv")
-    with open(csvpath, 'w') as csvfile:
-
-        csvwriter = csv.writer(csvfile)
-
-        csvwriter.writerow(header)
-
-        for row in qualifying_loans:
-            
-            csvwriter.writerow(row)
-
 
 def run():
     """The main function for running the script."""
@@ -149,9 +129,10 @@ def run():
         bank_data, credit_score, debt, income, loan_amount, home_value
     )
 
+    save_csv(qualifying_loans)
+
     # Save qualifying loans
     save_qualifying_loans(qualifying_loans)
-
 
 if __name__ == "__main__":
     fire.Fire(run)
