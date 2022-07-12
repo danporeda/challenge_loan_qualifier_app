@@ -111,11 +111,24 @@ def save_qualifying_loans(qualifying_loans):
     """
     # @TODO: Complete the usability dialog for savings the CSV Files.
 
+    headerpath = Path("data/daily_rate_sheet.csv")
+    with open(headerpath, 'r') as headerfile:
+    
+        csvreader = csv.reader(headerfile)
+
+        data =[]
+
+        for row in csvreader:
+            data.append(row)
+
+    header = data[0][0:]
+
     csvpath = Path("data/qualifying_loans.csv")
+    with open(csvpath, 'w') as csvfile:
 
-    with open(csvpath, 'w', newline='') as csvfile:
+        csvwriter = csv.writer(csvfile)
 
-        csvwriter = csv.writer(csvfile, delimiter=',')
+        csvwriter.writerow(header)
 
         for row in qualifying_loans:
             
