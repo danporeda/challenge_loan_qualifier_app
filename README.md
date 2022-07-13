@@ -1,18 +1,17 @@
 # # Project Title
 
-Just after the title, introduce your project by describing attractively what the project is about and what is the main problem that inspires you to create this project or what is the main contribution for the potential user of your project.
+This Project retrieves user data and filters it through a list of bank loans to determine which loans they qualify for. User data is collected through CLI and includes credit score, monthly debt, monthly income, desired loan amount, and home value. This will streamline the user's mortgage application process by predetermining which loans they qualify for. 
 
 ---
 
 ## Technologies
 
-Describe the technologies required to use your project such as programming languages, libraries, frameworks, and operating systems. Be sure to include the specific versions of any critical dependencies that you have used in the stable version of your project.
+This project is written in Python 3.7, and uses libraries and frameworks including `pathlib`, `csv`, `questionary`, and `fire`.
 
 ---
 
 ## Installation Guide
-
-In this section, you should include detailed installation notes containing code blocks and screenshots.
+copy the link to the to the repository here: (link)[
 
 ---
 
