@@ -11,7 +11,7 @@ This project is written in Python 3.7, and uses libraries and frameworks includi
 ---
 
 ## Installation Guide
-copy the link to the repository here: (link)["git@github.com:danporeda/challenge_loan_qualifier_app.git"]. 
+copy the link to the repository here: [link](git@github.com:danporeda/challenge_loan_qualifier_app.git). 
 open Terminal(Mac) or gitBash, `cd` to the desired directory, and run: ```git clone git@github.com:danporeda/challenge_loan_qualifier_app.git```.
 activate your `dev` environment: ```conda activate dev``.
 run the program: `python app.py`.
