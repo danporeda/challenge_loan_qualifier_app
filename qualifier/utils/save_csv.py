@@ -1,21 +1,13 @@
 import csv
 from pathlib import Path
 
-def save_csv(qualifying_loans):
+## this function retrieves the filtered list of qualifying loans as Arg[0],
+## and the user-retrieved file path to save this filtered loan list as Arg[1]
+def save_csv(qualifying_loans, save_path):
 
-    headerpath = Path("data/daily_rate_sheet.csv")
-    with open(headerpath, 'r') as headerfile:
-    
-        csvreader = csv.reader(headerfile)
+    header = ["Lender", "Max Loan Amount", "Max LTV", "Max DTI", "Min Credit Score", "Interest Rate"]
 
-        data =[]
-
-        for row in csvreader:
-            data.append(row)
-
-    header = data[0][0:]
-
-    csvpath = Path("data/qualifying_loans.csv")
+    csvpath = Path(save_path)
     with open(csvpath, 'w') as csvfile:
 
         csvwriter = csv.writer(csvfile)
