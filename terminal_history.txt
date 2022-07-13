@@ -1,0 +1,50 @@
+  489  jupyter lab
+  490  conda activate dev
+  491  cd ~/.jupyter/
+  492  ls
+  493  vi jupyter_notebook_config.py
+  494  jupyter lab
+  495  pwd
+  496  cd ..
+  497  cd desktop/Fintech-Workspace
+  498  ls
+  499  cd 01_Importing_the_VIX
+  500  jupyter lab
+  501  conda activate dev
+  502  pwd
+  503  cd desktop/Fintech-Workspace
+  504  jupyter lab
+  505  conda list pandas
+  506  conda list jupyterlab
+  507  pwd
+  508  ls
+  509  cd mod3 Class_1_Activities
+  510  cd mod3_Class_1_Activites
+  511  ls
+  512  cd mod3_Class_1_Activities
+  513  jupyter lab
+  514  cd ..
+  515  cd ..
+  516  cd github_upload
+  517  cd challenges
+  518  cd challenge_loan_qualifier
+  519  cd challenge_loan_qualifier_app
+  520  git add .
+  521  git status
+  522  git reset
+  523  git add app.py
+  524  git add qualifier/utils/save_csv.py
+  525  git status
+  526  git commit -m "Finalized code. completed the user input for save path, completed the save_csv dependancy and successfuly nested into save_qualifying_loans"
+  527  git push
+  528  cd ..
+  529  cd ~/
+  530  cd desktop
+  531  mv screen_shot_ex github_upload/challenges/challenge_loan_qualifier_app/screen_shot_ex.png
+  532  cd github_upload
+  533  cd challenges/challenge_loan_qualifier_app
+  534  git add screen_shot_ex.png
+  535  git status
+  536  git commit -m "screen shot of example use"
+  537  git push
+  538  history 50 > terminal_history.txt
