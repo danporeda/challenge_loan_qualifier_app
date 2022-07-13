@@ -1,4 +1,4 @@
-## Project Title
+## Loan Qualifier App
 
 This Project retrieves user data and filters it through a list of bank loans to determine which loans they qualify for. User data is collected through CLI and includes credit score, monthly debt, monthly income, desired loan amount, and home value. This will streamline the user's mortgage application process by predetermining which loans they qualify for. 
 
