@@ -21,15 +21,14 @@ run the program: `python app.py`.
 ## Usage
 
 The program starts with a prompt asking for a file-path to a rate sheet. This file is included in the repository, type into the CLI: ```./data/daily_rate_sheet.csv```.  The CLI proceeds to ask for your credit score, monthly debt, monthly income, desired loan amount, and home value. The resulting output is a message of the amount of loans qualified for. Then the user is prompted with the option to save this list of qualifying loans; at this point, type "Y" or "N". If yes, then another prompt asks which file path you wish to save the qualifying loans to. 
-![screen shot](
+![screen shot](https://github.com/danporeda/challenge_loan_qualifier_app/blob/7d1ecb761285a4a2a79c23cbb0affac37c6d59db/screen_shot_ex.png)
 ---
 
 ## Contributors
 
-In this section, list all the people who contribute to this project. You might want recruiters or potential collaborators to reach you, so include your contact email and, optionally, your LinkedIn or Twitter profile.
-
+Brought to you by the talented folks at Denver University Fintech bootcamp, and yours truly, Dan Poreda. 
 ---
 
 ## License
 
-When you share a project on a repository, especially a public one, it's important to choose the right license to specify what others can and can't with your source code and files. Use this section to include the license you want to use.
+Free for all. do whatever you want with it.
